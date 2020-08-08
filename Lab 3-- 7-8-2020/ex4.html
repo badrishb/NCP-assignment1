@@ -1,0 +1,35 @@
+
+<html >
+    <head>
+    
+    <link rel="stylesheet" type="text/css" href="styletest.css"/>
+    <title>Exercise 4</title>
+    <script type="text/javascript">
+      function Fib()
+      {
+      var n;
+      n=parseFloat(prompt("Enter the no. of terms you'll be needing in your sequence"));    
+      var i;
+      var fib = []; // Initialize array!
+      
+      fib[0] = 0;
+      fib[1] = 1;
+      document.body.style.fontFamily="Montserrat";
+      document.getElementById('p').innerHTML=(fib[0]+"<hr> ");
+      document.getElementById('p').innerHTML+=(fib[1]+"<hr> ");
+      for (i = 2; i < n; i++) {
+        fib[i] = fib[i - 2] + fib[i - 1];
+        document.getElementById('p').innerHTML+=(fib[i]+"<hr> ");
+      }     
+      
+      document.body.style.backgroundColor="red";
+      }
+      </script>
+    </head>
+    <body>
+        <center>
+        <input type="button" value="Click to generate the Fabled Fibonacci sequence " onclick="Fib()" />
+        <p id='p'></p>
+        </center>
+    </body>
+</html>

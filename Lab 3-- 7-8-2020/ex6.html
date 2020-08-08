@@ -1,0 +1,28 @@
+<html>
+    <head>
+    
+    <link rel="stylesheet" type="text/css" href="styletest.css"/>
+        <title>Excercise 6</title>
+    
+    <script type="text/javascript" class='a'>
+    function SI()
+    {
+    var p,r,t,am;
+    p=parseFloat(prompt("Principle "));
+    r=parseFloat(prompt("Rate of Interest<"));
+    t=parseFloat(prompt("Time(year)"));
+    var si=(p*r*t)/100;
+    am=si+p;
+    document.bgColor='red';
+    document.write("Simple Interest: "+si);
+    document.write('<hr>')
+    document.write("Final amount :" +am)
+    }
+    </script>
+    </head>
+    <body>
+    <center>
+        <input type="button" value="Calculate Simple Interest" onclick="SI()" />
+        </center>
+    </body>
+</html>

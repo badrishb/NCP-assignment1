@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <link rel="stylesheet" type="text/css" href="styletest.css"/>
+    <title>Excercise 5</title>
+    </head>
+    <script type="text/javascript" class='a'>
+    function sort()
+    {
+    var n;
+    n=parseFloat(prompt("Please Enter Number of names"));    
+    var str = []; // Initialize array!
+
+    for (i = 0; i < n; i++) {
+    str[i]=(prompt("Enter the name " +(i+1))); 
+    
+    }
+    str.sort();
+    for (i = 0; i < n; i++) {
+    document.write("<p>"+str[i]+"</p> ");
+    document.write("<hr>")
+    }
+    document.bgColor=rgb(16, 63, 78);
+        
+    }
+    </script>
+    <body>
+    <center>
+        <input type="button" style="font-family: 'Montserrat';" value="Lexicographic sort-> Strings" onclick="sort()" />
+        </center>
+    </body>
+</html>
