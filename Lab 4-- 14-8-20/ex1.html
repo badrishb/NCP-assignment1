@@ -1,0 +1,50 @@
+<html id='pag'>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styletest.css"/>
+        <title>
+            Ex1
+        </title>
+        <script class='a' language="javascript" type="text/javascript">
+        document.write("<hr>")
+        // alert("I'm sure you're ok")
+        function test()
+        {
+            try{
+                var d=document.getElementById('inp').value;
+                // throw('Divide by zero error.');
+                // alert('Your input string: '+d+' has been submitted successfully');
+                document.getElementById('p').innerHTML=("Your String in its array form is: " +"<br>");
+
+                document.getElementById('p').innerHTML+=d.split("");
+            }
+            catch(e){
+                alert("Error: "+e);
+            }
+
+            
+        }
+        document.write("<center><h1>JavaScript-> Fully functional</h1></center>")
+        document.write("<hr>")
+        </script>
+    </head>
+    <body >
+        <Center>
+            <h1 >
+                Yeah Science!
+             </h1>
+        </Center>
+        
+        <br>
+        <center>
+            <form action="javascript:void(0);">
+        
+                <p>Text to array Conversion:</p> <input id='inp' type="text"/><br><br>
+                <input type="submit" value="Sign-in" onclick="test()"/>
+            </form>
+            <p id='p'></p>
+            
+        </center>
+      
+
+    </body>
+</html>

@@ -1,0 +1,73 @@
+<html id='pag'>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styletest.css"/>
+        <title>
+            Ex6
+        </title>
+        <script class='a' language="javascript" type="text/javascript">
+        document.write("<hr>")
+        // alert("I'm sure you're ok")
+        function test()
+        {
+            try{
+               
+                // throw('Divide by zero error.');
+                // alert('Your input string: '+d+' has been submitted successfully');
+                document.getElementById('p').innerHTML="";
+                for(var i=0;i<5;i++)
+                {
+                    var ds=prompt(("Enter the marks for subject "+(i+1)));
+                    ds=parseInt(ds);
+                if(ds>=90)
+                {
+                    document.getElementById('p').innerHTML+=("Your grade in subject "+(i+1)+" for the mark "+ds+" is : A"+"<br>");
+                }
+                else if(ds>=80)
+                {
+                    document.getElementById('p').innerHTML+=("Your grade in subject "+(i+1)+" for the mark "+ds+" is : B"+"<br>");
+                }
+                else if(ds>=70)
+                {
+                    document.getElementById('p').innerHTML+=("Your grade in subject "+(i+1)+" for the mark "+ds+" is : C"+"<br>");
+                }
+                else if(ds>=60)
+                {
+                    document.getElementById('p').innerHTML+=("Your grade in subject "+(i+1)+" for the mark "+ds+" is : D"+"<br>");
+                }
+                else
+                {
+                    document.getElementById('p').innerHTML+=("Your grade  in subject "+(i+1)+" for the mark "+ds+" is : F"+"<br>");
+                }
+
+                
+            }}
+            catch(e){
+                alert("Error: "+e);
+            }
+
+            
+        }
+        document.write("<center><h1>JavaScript-> Fully functional</h1></center>")
+        document.write("<hr>")
+        </script>
+    </head>
+    <body >
+        <Center>
+            <h1 >
+                Yeah Science!
+             </h1>
+        </Center>
+        
+        <br>
+        <center>
+            <form action="javascript:void(0);">
+                <br><br>
+                <input type="submit" value="Check grade" onclick="test()"/>
+            </form>
+            <p id='p'></p>
+            
+        </center>
+      
+
+    </body>
+</html>

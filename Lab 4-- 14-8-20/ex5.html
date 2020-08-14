@@ -1,0 +1,57 @@
+<html id='pag'>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styletest.css"/>
+        <title>
+            Ex5
+        </title>
+        <script class='a' language="javascript" type="text/javascript">
+        document.write("<hr>")
+        // alert("I'm sure you're ok")
+        function test()
+        {
+            for(var i=1;i<101;i++)
+            {
+                if(i%3==0 && i%5==0)
+                {
+                    document.getElementById('p').innerHTML+=("FizzBuzz"+"<br>");
+                }
+                else if(i%3==0)
+                {
+                    document.getElementById('p').innerHTML+=("Fizz"+"<br>");
+                }
+                else if(i%5==0)
+                {
+                    document.getElementById('p').innerHTML+=("Buzz"+"<br>");
+                }
+                else{
+                    document.getElementById('p').innerHTML+=(i+"<br>");
+                }
+            }
+
+            
+        }
+        document.write("<center><h1>JavaScript-> Fully functional</h1></center>")
+        document.write("<hr>")
+        </script>
+    </head>
+    <body >
+        <Center>
+            <h1 >
+                Yeah Science!
+             </h1>
+        </Center>
+        
+        <br>
+        <center>
+            <form action="javascript:void(0);">
+        
+                <p>Do you wanna generate the series?</p><br><br>
+                <input type="submit" value="Hell yeah" onclick="test()"/>
+            </form>
+            <p id='p'></p>
+            
+        </center>
+      
+
+    </body>
+</html>

@@ -1,0 +1,70 @@
+<html id='pag'>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styletest.css"/>
+        <title>
+            Ex3
+        </title>
+        <script class='a' language="javascript" type="text/javascript">
+        document.write("<hr>")
+        function gen(n)
+        {
+            str='';
+            while(n>0)
+            {
+                str+='*';
+                n=n-1;
+            }
+            return str;
+        }
+
+        function test()
+        {
+            document.getElementById('p').innerHTML='';
+            try{
+
+                var n;
+                var str = []; 
+                var temp='';
+                temp=(prompt("Enter the first number " ));
+                var i=0;
+                while(temp!=null)
+                {
+                str[i]=parseInt(temp);
+                i=i+1;
+                temp=(prompt("Enter the next number " )); 
+                }                
+                for (i = 0; i < str.length; i++) {
+                document.getElementById('p').innerHTML+=(gen(str[i])+"<br>");
+                }    
+                
+            }
+            catch(e){
+                alert("Error: "+e);
+            }
+
+            
+        }
+        document.write("<center><h1>JavaScript-> Fully functional</h1></center>")
+        document.write("<hr>")
+        </script>
+    </head>
+    <body >
+        <Center>
+            <h1 >
+                Yeah Science!
+             </h1>
+        </Center>
+        
+        <br>
+        <center>
+            <form action="javascript:void(0);">
+                <p>Do you wanna start generating histograms</p> <br><br>
+                <input type="submit" value="Yes" onclick="test()"/>
+            </form>
+            <p id='p'></p>
+            
+        </center>
+      
+
+    </body>
+</html>

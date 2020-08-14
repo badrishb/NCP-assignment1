@@ -1,0 +1,89 @@
+<html id='pag'>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styletest.css"/>
+        <title>
+            Ex2
+        </title>
+        <script class='a' language="javascript" type="text/javascript">
+        document.write("<hr>")
+                // alert("I'm sure you're ok")
+        function test()
+        {
+            document.getElementById('p').innerHTML='';
+            try{
+
+                var n;
+                n=parseInt(document.getElementById('inp').value)
+                var str = []; // Initialize array!
+                var temp='';
+
+                for (i = 0; i < n; i++) 
+                {
+                tempy='';
+                temp=(prompt("Enter the name " +(i+1)));
+                temp=temp.toLowerCase(); 
+                for(var j=0;j<temp.length;j++)
+                {
+                    tempy=temp.charAt(j)+tempy;
+                }
+                str[i]=tempy;
+                
+                }
+                str.sort();
+                for (i = 0; i < n; i++) {
+                // document.write("<p>"+str[i]+"</p> ");
+                temp=str[i];
+                tempy='';
+                for(var j=0;j<temp.length;j++)
+                {
+                    tempy=temp.charAt(j)+tempy;
+                }
+                str[i]=tempy;
+                document.getElementById('p').innerHTML+=(str[i]+"<br>");
+                // document.write("<hr>")
+                }    
+                
+                // var n=document.getElementById('inp').value;
+                // var =[];
+                // n=parseInt(n);
+                // for(var i=0;i<n;i++)
+                // {
+                // document.getElementById('p').innerHTML=("Enter string : "+(i+1) +"<br>");
+
+                // document.getElementById('p').innerHTML+=d.split("");
+
+                // }
+                // throw('Divide by zero error.');
+                // alert('Your input string: '+d+' has been submitted successfully');
+                
+            }
+            catch(e){
+                alert("Error: "+e);
+            }
+
+            
+        }
+        document.write("<center><h1>JavaScript-> Fully functional</h1></center>")
+        document.write("<hr>")
+        </script>
+    </head>
+    <body >
+        <Center>
+            <h1 >
+                Yeah Science!
+             </h1>
+        </Center>
+        
+        <br>
+        <center>
+            <form action="javascript:void(0);">
+                <p>Enter the number of strings you want to sort</p> <input id='inp' type="text"/><br><br>
+                <input type="submit" value="Spin it" onclick="test()"/>
+            </form>
+            <p id='p'></p>
+            
+        </center>
+      
+
+    </body>
+</html>

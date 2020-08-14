@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styletest.css"/>
+        <title>
+            Test
+        </title>
+        <script class='a' language="javascript" type="text/javascript">
+        document.write("<hr>")
+        alert("I'm sure you're ok")
+        function test()
+        {
+            try{
+                var a=100;
+                var b=0;
+                var c=a/0;
+                var d="Badrish1999";
+                // throw('Divide by zero error.');
+                alert('Your form has been submitted successfully with val: '+d.charAt(d.length-9).toUpperCase());
+            }
+            catch(e){
+                alert("Error: "+e);
+            }
+
+            
+        }
+        document.write("<h1>JavaScript-> Fully functional</h1>")
+        document.write("<hr>")
+        </script>
+    </head>
+    <body >
+        <h1 >
+           Yeah Science!
+        </h1>
+        <br>
+        <form onsubmit="test()">
+        
+            <p>Name:</p> <input id='inp' type="text"><br><br>
+            <input type="submit" value="Sign-in">
+        </form>
+        <ol>
+            <li>First</li>
+            <li>Second</li>
+        </ol>
+        <dl>
+            <dt>Check</dt>
+            <dd>
+                Just to check functionality of data description tags
+            </dd>
+            <li>
+                <a href="www.google.com">Google.com</a>
+            </li>
+        </dl>
+    </body>
+</html>
