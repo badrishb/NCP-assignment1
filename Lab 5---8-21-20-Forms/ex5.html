@@ -1,0 +1,87 @@
+<html id='pag'>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styletest.css"/>
+        <title>
+            Ex5
+        </title>
+        <script class='a' language="javascript" type="text/javascript">
+        document.write("<hr>")
+        var freq=[0,0,0,0,0];
+        var names=["Sivaji","Aadhisheshan","Vivek","Raghuvaran","Raja"];
+        var i=0;
+        // alert("I'm sure you're ok")
+        function siv()
+        {
+            // window.open('sivaji.jpg');
+            document.getElementById('im').src=('sivaji.jpg');
+            document.getElementById('p').innerHTML=("Sivaji is the protagonist of this story. He is a self-made millionaire who hopes to help improve the lives of his fellow Indians");
+            freq[0]=freq[0]+1;
+        }
+        function adi()
+        {
+            // window.open('adhi.jpg');
+            document.getElementById('im').src=('adhi.jpg');
+            document.getElementById('p').innerHTML=("Adhisheshan is the main antagonist of the story.He is an immoral and corrupt politician whose position leads to him crossing paths with Sivaji. ");
+            freq[1]=freq[1]+1;
+        }
+        function viv()
+        {
+            document.getElementById('im').src=('vivek.jpg');
+            document.getElementById('p').innerHTML=("Vivek is Sivaji's uncle. He is the main comic releif in the film and stays with Sivaji and helps him get through all his problems");
+            freq[2]=freq[2]+1;
+        }
+        function rag()
+        {
+            document.getElementById('im').src=('raghuvaran.jpg');
+            document.getElementById('p').innerHTML=("Raghuvaran is the principal of Sivaji's multiple medical colleges. He is a loyal and hardworking person who helps save Sivaji's life near the end of the film");
+            freq[3]=freq[3]+1;
+        }
+        function raj()
+        {
+            document.getElementById('im').src=('raja.png');
+            document.getElementById('p').innerHTML=("Raja is Sivaji's father-in-law.A highly humorous but also equally orthodox middle class character");
+            freq[4]=freq[4]+1;
+        }
+        function disp()
+        {
+            document.getElementById('p').innerHTML='';
+            for(i=0;i<5;i++)
+            {
+                document.getElementById('p').innerHTML+=(names[i]+":"+freq[i]+"<br>");
+            }
+        }
+
+
+        document.write("<center><h1>JavaScript-> Fully functional</h1></center>")
+        document.write("<hr>")
+        </script>
+    </head>
+    <body >
+        <Center>
+            <h1 >
+                Yeah Science!
+             </h1>
+             <script>
+                 var names=["Sivaji","Aadhisheshan","Vivek","Raghuvaran","Raja"];
+                var pages=["sivaji.jpg","adhi.jpg","vivek.jpg","rahuvaran.jpg","raja.png"];
+                var nam=["siv()","adi()","viv()","rag()","raj()"];
+                var i=0;
+                for(i=0;i<5;i++)
+                {
+                    document.write("<div onclick='"+nam[i]+"'><p id='s' >"+names[i]+"</p></div>");
+                }
+             </script>
+        </Center>
+        
+        <br>
+        <center>
+
+            <p id='p'></p>
+            <button value="Display Frequency" onclick="disp()">Display frequency</button><br>
+            <img src="Question-mark-grey.jpg" id="im" style="height: 300px; width: auto;">
+            
+        </center>
+      
+
+    </body>
+</html>

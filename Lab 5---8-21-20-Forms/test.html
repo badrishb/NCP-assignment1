@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styletest.css"/>
+        <title>
+            Test
+        </title>
+        <script  language="javascript" type="text/javascript">
+        document.write("<hr>")
+        alert("I'm sure you're ok")
+        function test()
+        {
+            alert('Your form has been submitted successfully')
+        }
+        document.write("<h1>JavaScript-> Fully functional</h1>")
+        document.write("<hr>")
+        function tt()
+       { var aa=["Badrish","Baskaran"];
+        document.getElementById('p').innerHTML+=(aa.shift()+"->Your form has been submitted successfully"+"<br>");}
+        // document.getElementById('p').innerHTML+=('Hi');
+        </script>
+    </head>
+    <body ondblclick="tt()" >
+        <!-- <script language="javascript" type="text/javascript">
+            document.getElementById('p').innerHTML="Status";
+        </script> -->
+        <h1 >
+           Yeah Science!
+        </h1>
+        <br>
+        <br>
+        <form onsubmit="test()">
+        
+            <p>Name:</p> <input type="text"><br><br>
+            <input type="submit" value="Sign-in">
+        </form>
+        <ol>
+            <li>First</li>
+            <li>Second</li>
+        </ol>
+        <dl>
+            <dt>Check</dt>
+            <dd>
+                Just to check functionality of data description tags
+            </dd>
+            <li>
+                <a href="www.google.com">Google.com</a>
+            </li>
+        </dl>
+        <script>
+            var i=0;
+            for(i=0;i<10;i++)
+            {
+                document.write("<p>"+i+"</p>");
+                document.write("  ")
+            }
+        </script>
+        <br>
+        <p id='p'></p>
+        
+    </body>
+</html>

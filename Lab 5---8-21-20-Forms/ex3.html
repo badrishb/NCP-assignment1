@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styletest.css"/>
+        <title>
+            Ex3
+        </title>
+        <script  language="javascript" type="text/javascript">
+
+        document.write("<center><hr>")
+        document.write("<h1>JavaScript-> Fully functional</h1>")
+        document.write("<hr></center>")
+        function tt()
+       { 
+           var names=["AAA","BBB","CCC","DDD","EEE","FFF","GGG","HHH"];
+           var pages=[12,47,89,133,189,221,266,302];
+        document.getElementById('p').innerHTML=("->Your form has been submitted successfully"+"<br>");
+        var chap=document.getElementById('chap').value;
+        var i=0;
+        for(i=0;i<8;i++)
+        {
+            if(names[i]==chap)
+            {
+                document.getElementById('p').innerHTML+=(pages[i]);
+                break;
+            }
+        }
+        if(i==8)
+        {
+            document.getElementById('p').innerHTML+=("Page not found");
+        }
+        document.getElementById('p').innerHTML+=("<br>");
+        // document.getElementById('p').innerHTML+=(r+","+c+"<br>");
+
+        }
+        
+        </script>
+    </head>
+    <body ondblclick="tt()" >
+        <!-- <script language="javascript" type="text/javascript">
+            document.getElementById('p').innerHTML="Status";
+        </script> -->
+       <center>
+        <h1 >
+            Yeah Science!
+         </h1>
+         <br>
+         <br>
+         <script>
+                var namez=["AAA","BBB","CCC","DDD","EEE","FFF","GGG","HHH"];
+                var pagez=[12,47,89,133,189,221,266,302];
+                var i=0;
+                for(i=0;i<8;i++)
+                {
+                    document.write("<p>"+namez[i]+"---"+pagez[i]+"</p>");
+                }
+
+         </script>
+         <!-- <p id='ind'></p><br> -->
+         <form onsubmit="tt()" action="javascript:void(0);">
+         
+             <p>Enter the Chapter name:</p> <input type="text" id='chap'><br><br>
+             <input type="submit" value="Get page">
+         </form>
+         <br>
+         <p id='p'></p>
+       </center>
+        
+    </body>
+</html>

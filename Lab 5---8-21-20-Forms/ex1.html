@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styletest.css"/>
+        <title>
+            Ex1
+        </title>
+        <script  language="javascript" type="text/javascript">
+
+        document.write("<center><hr>")
+        document.write("<h1>JavaScript-> Fully functional</h1>")
+        document.write("<hr></center>")
+        function tt()
+       { 
+           var aa=["Badrish","Baskaran"];
+        document.getElementById('p').innerHTML+=(aa.shift()+"->Your form has been submitted successfully"+"<br>");
+        document.getElementById('p').innerHTML+=("The specified multiplication tables->"+"<br>");
+        var r=document.getElementById('r').value;
+        var c=document.getElementById('c').value;
+        // document.getElementById('p').innerHTML+=(r+","+c+"<br>");
+        var i=0;
+        var j=0;
+        for(i=0;i<r;i++)
+        {
+            for(j=0;j<c;j++)
+            {
+                document.getElementById('p').innerHTML+=((i+1)+"*"+(j+1)+"="+((i+1)*(j+1))+" &nbsp &nbsp &nbsp");
+            }
+            document.getElementById('p').innerHTML+=("<br>");
+        }
+        }
+        
+        </script>
+    </head>
+    <body ondblclick="tt()" >
+        <!-- <script language="javascript" type="text/javascript">
+            document.getElementById('p').innerHTML="Status";
+        </script> -->
+       <center>
+        <h1 >
+            Yeah Science!
+         </h1>
+         <br>
+         <br>
+         <form onsubmit="tt()" action="javascript:void(0);">
+         
+             <p>No. of Rows:</p> <input type="text" id='r'><br>
+             <p>No. of Columns:</p> <input type="text" id='c'><br><br>
+             <input type="submit" value="Sign-in">
+         </form>
+         <br>
+         <p id='p'></p>
+       </center>
+        
+    </body>
+</html>

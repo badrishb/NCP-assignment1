@@ -1,0 +1,62 @@
+<html id='pag'>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styletest.css"/>
+        <title>
+            Ex2
+        </title>
+        <script class='a' language="javascript" type="text/javascript">
+        document.write("<hr>")
+        // alert("I'm sure you're ok")
+        function test()
+        {
+            try{
+                var ds=document.getElementById('inp').value;
+                // throw('Divide by zero error.');
+                // alert('Your input string: '+d+' has been submitted successfully');
+                var d;
+                var m;
+                var y;
+                temp=ds.split("-");
+                d=parseInt(temp[0]);
+                m=parseInt(temp[1]);
+                y=parseInt(temp[2]);
+                if(d<32 && m<13)
+                {
+                    document.getElementById('p').innerHTML=("The given date is valid");
+                }
+                else{
+                    document.getElementById('p').innerHTML=("The given date is in-valid");
+
+                }
+            }
+            catch(e){
+                alert("Error: "+e);
+            }
+
+            
+        }
+        document.write("<center><h1>JavaScript-> Fully functional</h1></center>")
+        document.write("<hr>")
+        </script>
+    </head>
+    <body >
+        <Center>
+            <h1 >
+                Yeah Science!
+             </h1>
+        </Center>
+        
+        <br>
+        <center>
+            <form action="javascript:void(0);">
+        
+                <p>Please enter the date of birth which you'd like to validate in the format(DD-MM-YYYY):</p> <input id='inp' type="text"/><br><br>
+                <input type="submit" value="Validate" onclick="test()"/>
+            </form>
+            <p id='p'></p>
+            
+        </center>
+      
+
+    </body>
+</html>
