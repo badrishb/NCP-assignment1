@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="hospital.css"?>
+<?xml-stylesheet href="hospital.xsl" type="text/xsl"?> 
+<!-- <!DOCTYPE hospital[
+<!ELEMENT hospital (patient*)>
+<!ELEMENT patient (patname,patid,patage,disease,tdname,roomno)>
+<!ELEMENT patname (#PCDATA)>
+<!ELEMENT patid (#PCDATA)>
+<!ELEMENT patage (#PCDATA)>
+<!ELEMENT disease (#PCDATA)>
+<!ELEMENT tdname (#PCDATA)>
+<!ELEMENT roomno (#PCDATA)>
+]> -->
+<!DOCTYPE hospital SYSTEM "hospital.dtd">
+<hospital xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="hospital.xsd">
+<patient>
+<patname>Badrish</patname>
+<patid>1</patid>
+<patage>56</patage>
+<disease>XX</disease>
+<tdname>DD</tdname>
+<roomno>1 </roomno>
+</patient>
+<patient>
+<patname>Ashwin</patname>
+<patid>2</patid>
+<patage>66</patage>
+<disease>XX</disease>
+<tdname>DD</tdname>
+<roomno>2</roomno>
+</patient>
+<patient>
+<patname>Nambiar</patname>
+<patid>3</patid>
+<patage>34</patage>
+<disease>XX</disease>
+<tdname>DD</tdname>
+<roomno>3</roomno>
+</patient>
+<patient>
+<patname>Ajay</patname>
+<patid>4</patid>
+<patage>78</patage>
+<disease>XX</disease>
+<tdname>DD</tdname>
+<roomno>4</roomno>
+</patient>
+<patient>
+<patname>Krishhan</patname>
+<patid>5</patid>
+<patage>21</patage>
+<disease>XX</disease>
+<tdname>DD</tdname>
+<roomno>5</roomno>
+</patient>
+<patient>
+<patname>Aatmaja</patname>
+<patid>6</patid>
+<patage>50</patage>
+<disease>XX</disease>
+<tdname>DD</tdname>
+<roomno>6</roomno>
+</patient>
+<patient>
+<patname>Rajasekar</patname>
+<patid>7</patid>
+<patage>47</patage>
+<disease>XX</disease>
+<tdname>DD</tdname>
+<roomno>7</roomno>
+</patient>
+<patient>
+<patname>Dhanishwar</patname>
+<patid>8</patid>
+<patage>16</patage>
+<disease>XX</disease>
+<tdname>DD</tdname>
+<roomno>8</roomno>
+</patient>
+<patient>
+<patname>Ragul</patname>
+<patid>9</patid>
+<patage>7</patage>
+<disease>XX</disease>
+<tdname>DD</tdname>
+<roomno>9</roomno>
+</patient>
+<patient>
+<patname>Aakash</patname>
+<patid>10</patid>
+<patage>59</patage>
+<disease>XX</disease>
+<tdname>DD</tdname>
+<roomno>10</roomno>
+</patient>
+<patient>
+<patname>Pranoy</patname>
+<patid>11</patid>
+<patage>41</patage>
+<disease>XX</disease>
+<tdname>DD</tdname>
+<roomno>11</roomno>
+</patient>
+<patient>
+<patname>Nobel</patname>
+<patid>12</patid>
+<patage>26</patage>
+<disease>XX</disease>
+<tdname>DD</tdname>
+<roomno>12</roomno>
+</patient>
+<patient>
+<patname>Praveen</patname>
+<patid>13</patid>
+<patage>88</patage>
+<disease>XX</disease>
+<tdname>DD</tdname>
+<roomno>13</roomno>
+</patient>
+<patient>
+<patname>Joseph</patname>
+<patid>14</patid>
+<patage>19</patage>
+<disease>XX</disease>
+<tdname>DD</tdname>
+<roomno>14</roomno>
+</patient>
+<patient>
+<patname>Prakash</patname>
+<patid>15</patid>
+<patage>52</patage>
+<disease>XX</disease>
+<tdname>DD</tdname>
+<roomno>15</roomno>
+</patient>
+</hospital>

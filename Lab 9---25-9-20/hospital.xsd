@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="hospital">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="patient" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="patient">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="patname" />
+				<xs:element ref="patid" />
+				<xs:element ref="patage" />
+				<xs:element ref="disease" />
+				<xs:element ref="tdname" />
+				<xs:element ref="roomno" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="patname" type="xs:string" />
+	<xs:element name="patid" type="xs:integer" />
+	<xs:element name="patage" type="xs:integer" />
+	<xs:element name="disease" type="xs:string" />
+	<xs:element name="tdname" type="xs:string" />
+	<xs:element name="roomno" type="xs:integer" />
+</xs:schema>
