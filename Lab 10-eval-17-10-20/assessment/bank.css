@@ -1,0 +1,14 @@
+﻿custacc,custdetails,custtransac {
+    font-size: 100%;
+    margin: 0.5em;
+    color:yellowgreen;
+    font-family: Verdana;
+    display: block;
+}
+custdetails {
+    font-size: 160%;
+    margin: 0.5em;
+    color: aquamarine;
+    font-family: Verdana;
+    display: block;
+}

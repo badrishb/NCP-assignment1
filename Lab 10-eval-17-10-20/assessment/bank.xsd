@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="bank">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="customer" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="allwith">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="with" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="with">
+		<xs:complexType>
+			<xs:sequence>
+				
+				<xs:element ref="withamt"/>
+				<xs:element ref="wbalbef" />
+				<xs:element ref="wbalaft"/>
+				<xs:element ref="wdate" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="alldep">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="dep" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="dep">
+		<xs:complexType>
+			<xs:sequence>
+
+				<xs:element ref="depamt"/>
+				<xs:element ref="dbalbef" />
+				<xs:element ref="dbalaft"/>
+				<xs:element ref="ddate" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="customer">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="custdetails" />
+				<xs:element ref="custtransac" />
+				<xs:element ref="custacc" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="custdetails">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref="custid" />
+			<xs:element ref="custname" />
+			<xs:element ref="custage" />
+			<xs:element ref="custgen" />
+			<xs:element ref="custadd" />
+			<xs:element ref="custbranch" />
+		</xs:sequence>
+	</xs:complexType>
+	</xs:element>
+	<xs:element name="custtransac">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref="nowith" />
+			<xs:element ref="nodep" />
+			<xs:element ref="allwith"/>
+			<xs:element ref="alldep"/>
+		</xs:sequence>
+	</xs:complexType>
+	</xs:element>
+	<xs:element name="custacc">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref="acctype" />
+			<xs:element ref="accstart" />
+			<xs:element ref="accbal" />
+			<xs:element ref="accloans" />
+		</xs:sequence>
+	</xs:complexType>
+	</xs:element>	
+	<xs:element name="custid" type="xs:integer" />
+	<xs:element name="custname" type="xs:string" />
+	<xs:element name="custage" type="xs:integer" />
+	<xs:element name="custgen" type="xs:string" />
+	<xs:element name="custadd" type="xs:string" />
+	<xs:element name="custbranch" type="xs:string" />
+	<xs:element name="acctype" type="xs:string" />
+	<xs:element name="withamt" type="xs:integer" />
+	<xs:element name="wbalbef" type="xs:integer" />
+	<xs:element name="wbalaft" type="xs:integer" />
+	<xs:element name="wdate" type="xs:integer" />
+	<xs:element name="depamt" type="xs:integer" />
+	<xs:element name="dbalbef" type="xs:integer" />
+	<xs:element name="dbalaft" type="xs:integer" />
+	<xs:element name="ddate" type="xs:integer" />
+	<xs:element name="accbal" type="xs:integer" />
+	<xs:element name="accstart" type="xs:integer" />
+	<xs:element name="nodep" type="xs:integer" />
+	<xs:element name="nowith" type="xs:integer" />
+	<xs:element name="accloans" >
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="loanamt" type="xs:integer" />
+				<xs:element name="loandate" type="xs:integer" />
+				<xs:element name="loanint" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>	
+	
+</xs:schema>

@@ -1,0 +1,11 @@
+<!ELEMENT survey (isro)>
+<!ELEMENT isro (region, location, feature_type, ROV_dives, area_covered, depth_surveyed, distance_from_land, shipping_activity, items)>
+<!ELEMENT region (#PCDATA)>
+<!ELEMENT location (#PCDATA)>
+<!ELEMENT feature_type (#PCDATA)>
+<!ELEMENT ROV_dives (#PCDATA)>
+<!ELEMENT area_covered (#PCDATA)>
+<!ELEMENT depth_surveyed (#PCDATA)>
+<!ELEMENT distance_from_land (#PCDATA)>
+<!ELEMENT shipping_activity (#PCDATA)>
+<!ELEMENT items (#PCDATA)>
